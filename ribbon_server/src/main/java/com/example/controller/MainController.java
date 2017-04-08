@@ -20,7 +20,7 @@ public class MainController {
     @RequestMapping(value = "/add", method = RequestMethod.GET)
     public String add() {
 
-        String a = restTemplate.getForEntity("http://discovery_service/add?a=10&b=20", String.class).getBody();
+        String a = restTemplate.getForEntity("http://discovery-service/add?a=10&b=20", String.class).getBody();
         System.out.println(a);
 
         return a;

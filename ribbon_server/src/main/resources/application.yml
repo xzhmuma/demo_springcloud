@@ -1,13 +1,11 @@
 spring:
  application:
-  name: ribbon_server
+  name: ribbon-server
 server:
   port: 9120
 eureka:
- client:
-  serviceUrl:
-    defaultZone: http://localhost:9100/eureka/
-
-
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:9100/eureka/
 
 

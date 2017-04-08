@@ -1,8 +1,9 @@
 spring:
   application:
-    name: eureka_service
+    name: eureka-service
 server:
   port: 9100
+
 eureka:
   instance:
     hostname: localhost
