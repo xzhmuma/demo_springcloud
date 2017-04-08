@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: discovery_service
+server:
+  port: 9110
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:9100/eureka/
