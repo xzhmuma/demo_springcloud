@@ -20,6 +20,7 @@
       <module name="discovery_server2" target="1.8" />
       <module name="eureka_server" target="1.8" />
       <module name="feign_server" target="1.8" />
+      <module name="hystrix_dashboard_server" target="1.8" />
       <module name="ribbon_server" target="1.8" />
     </bytecodeTargetLevel>
   </component>
