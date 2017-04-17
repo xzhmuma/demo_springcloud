@@ -1,5 +1,6 @@
 package com.example.serverClient;
 
+import com.example.serverClient.impl.DiscoveryClientImpl;
 import org.springframework.cloud.netflix.feign.FeignClient;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -7,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 /**
  * Created by ChuChen on 2017/4/10.
  */
-@FeignClient("discovery-service")
+@FeignClient(value = "discovery-service", fallback = DiscoveryClientImpl.class)
 public interface DiscoveryClient {
 
     @RequestMapping("/add")
