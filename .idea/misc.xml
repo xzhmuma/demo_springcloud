@@ -45,6 +45,7 @@
         <option value="$PROJECT_DIR$/discovery_server/pom.xml" />
         <option value="$PROJECT_DIR$/ribbon_server/pom.xml" />
         <option value="$PROJECT_DIR$/discovery_server2/pom.xml" />
+        <option value="$PROJECT_DIR$/feign_server/pom.xml" />
       </list>
     </option>
   </component>

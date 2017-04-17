@@ -1,5 +1,6 @@
 package com.example.controller;
 
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -14,9 +15,9 @@ import org.springframework.web.client.RestTemplate;
 public class MainController {
 
     @Autowired
-    @LoadBalanced
     RestTemplate restTemplate;
 
+    @HystrixCommand(fallbackMethod = "addFallback")
     @RequestMapping(value = "/add", method = RequestMethod.GET)
     public String add() {
 
@@ -24,5 +25,10 @@ public class MainController {
         System.out.println(a);
 
         return a;
+    }
+
+    public String addFallback() {
+
+        return "error";
     }
 }

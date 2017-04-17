@@ -10,6 +10,7 @@
         <module name="discovery_server (1)" />
         <module name="discovery_server2" />
         <module name="eureka_server" />
+        <module name="feign_server" />
         <module name="ribbon_server" />
       </profile>
     </annotationProcessing>
@@ -18,6 +19,7 @@
       <module name="discovery_server (1)" target="1.8" />
       <module name="discovery_server2" target="1.8" />
       <module name="eureka_server" target="1.8" />
+      <module name="feign_server" target="1.8" />
       <module name="ribbon_server" target="1.8" />
     </bytecodeTargetLevel>
   </component>
