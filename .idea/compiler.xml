@@ -13,6 +13,7 @@
         <module name="eureka_server" />
         <module name="feign_server" />
         <module name="ribbon_server" />
+        <module name="zuul_server" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -25,6 +26,7 @@
       <module name="hystrix_dashboard_server" target="1.8" />
       <module name="hystrix_server" target="1.8" />
       <module name="ribbon_server" target="1.8" />
+      <module name="zuul_server" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

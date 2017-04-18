@@ -10,6 +10,7 @@
       <module fileurl="file://$PROJECT_DIR$/eureka_server/eureka_server.iml" filepath="$PROJECT_DIR$/eureka_server/eureka_server.iml" />
       <module fileurl="file://$PROJECT_DIR$/feign_server/feign_server.iml" filepath="$PROJECT_DIR$/feign_server/feign_server.iml" />
       <module fileurl="file://$PROJECT_DIR$/ribbon_server/ribbon_server.iml" filepath="$PROJECT_DIR$/ribbon_server/ribbon_server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zuul_server/zuul_server.iml" filepath="$PROJECT_DIR$/zuul_server/zuul_server.iml" />
     </modules>
   </component>
 </project>
