@@ -2,11 +2,11 @@ spring:
   application:
     name: eureka-service
 server:
-  port: 9101
+  port: 9102
 
 eureka:
   instance:
-    hostname: peer1
+    hostname: peer2
   client:
     serviceUrl:
-      defaultZone : http://peer2:9102/eureka/
+      defaultZone : http://peer1:9101/eureka/

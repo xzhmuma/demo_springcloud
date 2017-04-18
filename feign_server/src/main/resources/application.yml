@@ -3,11 +3,11 @@ spring:
     name: feign-server
 
 server:
- port: 9130
+ port: 9301
 
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:9100/eureka/
+      defaultZone: http://peer1:9101/eureka/,http://peer2:9102/eureka/
 
 

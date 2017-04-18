@@ -11,6 +11,7 @@
         <module name="discovery_server (1)" />
         <module name="discovery_server2" />
         <module name="eureka_server" />
+        <module name="eureka_server2" />
         <module name="feign_server" />
         <module name="ribbon_server" />
         <module name="zuul_server" />
@@ -22,6 +23,8 @@
       <module name="discovery_server (1)" target="1.8" />
       <module name="discovery_server2" target="1.8" />
       <module name="eureka_server" target="1.8" />
+      <module name="eureka_server (1)" target="1.8" />
+      <module name="eureka_server2" target="1.8" />
       <module name="feign_server" target="1.8" />
       <module name="hystrix_dashboard_server" target="1.8" />
       <module name="hystrix_server" target="1.8" />

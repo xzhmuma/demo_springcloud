@@ -2,8 +2,8 @@ spring:
   application:
     name: discovery-service
 server:
-  port: 9111
+  port: 9202
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:9100/eureka/
+      defaultZone: http://peer1:9101/eureka/,http://peer2:9102/eureka/
