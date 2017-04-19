@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: config-server
+
+server:
+  port: 9502
+
+
+# git
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: http://git.oschina.net/didispace/SpringBoot-Learning/
+          searchPaths: Chapter9-1-4/config-repo
+          username: username
+          password: password
