@@ -5,7 +5,17 @@ spring:
     config:
       uri: http://localhost:9501/
       profile: dev
+
+  rabbitmq:
+    host: chuchen
+    port: 5672
+    username: chuchen
+    password: chuchen
+
 server:
   port: 9502
 
-
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://peer1:9101/eureka/,http://peer2:9102/eureka/
