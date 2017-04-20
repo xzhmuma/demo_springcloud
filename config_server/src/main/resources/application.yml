@@ -1,12 +1,6 @@
 spring:
   application:
     name: config-server
-
-server:
-  port: 9040
-
-# gitπ‹¿Ì≈‰÷√
-spring:
   cloud:
     config:
       server:
@@ -15,3 +9,9 @@ spring:
           searchPaths: Chapter9-1-4/config-repo
           username: username
           password: password
+  profiles:
+    active: native
+
+server:
+  port: 9501
+
