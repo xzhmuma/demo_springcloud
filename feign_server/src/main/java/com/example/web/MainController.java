@@ -1,4 +1,4 @@
-package com.example.controller;
+package com.example.web;
 
 import com.example.serverClient.DiscoveryClient;
 import org.springframework.beans.factory.annotation.Autowired;

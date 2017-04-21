@@ -7,3 +7,5 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://peer1:9101/eureka/,http://peer2:9102/eureka/
+  instance:
+    status-page-url: http://localhost:${server.port}/swagger-ui.html # ${server.port}为该服务的端口号

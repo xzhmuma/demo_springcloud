@@ -1,9 +1,50 @@
 spring:
   application:
     name: discovery-service
+  thymeleaf:
+    cache: false
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.1.210:3306/springboot?characterEncoding=utf8&useSSL=false
+    username: chuchen
+    password: CENTOS@210su
+  jpa:
+    database: MYSQL
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+      dialect: org.hibernate.dialect.MySQL5Dialect
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
+    database-platform: org.hibernate.dialect.MySQL5Dialect
+  redis:
+    database: 0       # Redis数据库索引（默认为0）
+    host: 192.168.1.40
+    port: 6379
+    password: Qianmi001
+    pool:
+      max-active: 8
+      max-wait: -1
+      max-idle: 8
+      min-idle: 0
+  http:
+    multipart:
+      max-file-size: 10Mb
+      max-request-size: 50Mb
+  mvc:
+    favicon:
+      enabled: true
+  aop:
+    auto: true
+    proxy-target-class: true
+
 server:
   port: 9201
 eureka:
   client:
     serviceUrl:
       defaultZone: http://peer1:9101/eureka/,http://peer2:9102/eureka/
+  instance:
+    status-page-url: http://localhost:${server.port}/swagger-ui.html # ${server.port}为该服务的端口号
+
